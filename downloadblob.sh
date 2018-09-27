@@ -6,10 +6,6 @@
 # wget http://data.dmlc.ml/mxnet/models/imagenet/synset.txt
 # wget https://www.cntk.ai/resnet/ResNet_152.model
 
-if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
-    . /etc/bash_completion
-fi
-
 # Downloading Azure CLI on the VSTS build agent machine
 apt-get update -y && apt-get install -y python libssl-dev libffi-dev python-dev build-essential
 curl -L https://azurecliprod.blob.core.windows.net/install.py -o install.py
